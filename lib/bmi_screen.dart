@@ -19,7 +19,7 @@ class _BmiScreenState extends State<BmiScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(1, 0, 173, 181),
+        backgroundColor: const Color.fromARGB(255, 0, 172, 181),
         title: const Text(
           'BMI Calculator',
           style: TextStyle(
@@ -28,7 +28,7 @@ class _BmiScreenState extends State<BmiScreen> {
         ),
       ),
       body: Container(
-        color: const Color.fromARGB(1, 34, 40, 49),
+        color: const Color.fromARGB(255, 34, 40, 49),
         child: Column(
           children: [
             //gender part start
@@ -49,7 +49,7 @@ class _BmiScreenState extends State<BmiScreen> {
                             borderRadius: BorderRadius.circular(10),
                             color: isMale
                                 ? Colors.blue
-                                : const Color.fromARGB(1, 57, 62, 70),
+                                : const Color.fromARGB(255, 57, 62, 70),
                           ),
                           child: Column(
                             children: const [
@@ -63,7 +63,7 @@ class _BmiScreenState extends State<BmiScreen> {
                               Text(
                                 'male',
                                 style: TextStyle(
-                                  color: Color.fromARGB(1, 238, 238, 238),
+                                  color: Color.fromARGB(255, 238, 238, 238),
                                   fontWeight: FontWeight.bold,
                                   fontSize: 25,
                                 ),
@@ -87,7 +87,7 @@ class _BmiScreenState extends State<BmiScreen> {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
                             color: isMale
-                                ? const Color.fromARGB(1, 57, 62, 70)
+                                ? const Color.fromARGB(255, 57, 62, 70)
                                 : Colors.blue,
                           ),
                           child: Column(
@@ -100,7 +100,7 @@ class _BmiScreenState extends State<BmiScreen> {
                               Text(
                                 'Female',
                                 style: TextStyle(
-                                  color: Color.fromARGB(1, 238, 238, 238),
+                                  color: Color.fromARGB(255, 238, 238, 238),
                                   fontWeight: FontWeight.bold,
                                   fontSize: 25,
                                 ),
@@ -124,7 +124,7 @@ class _BmiScreenState extends State<BmiScreen> {
                 ),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: const Color.fromARGB(1, 57, 62, 70),
+                    color: const Color.fromARGB(255, 57, 62, 70),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Column(
@@ -133,7 +133,7 @@ class _BmiScreenState extends State<BmiScreen> {
                       const Text(
                         'Height',
                         style: TextStyle(
-                          color: (Color.fromARGB(1, 238, 238, 238)),
+                          color: (Color.fromARGB(255, 238, 238, 238)),
                           fontSize: 25,
                           fontWeight: FontWeight.bold,
                         ),
@@ -146,7 +146,7 @@ class _BmiScreenState extends State<BmiScreen> {
                           Text(
                             '${height.round()}',
                             style: const TextStyle(
-                              color: (Color.fromARGB(1, 238, 238, 238)),
+                              color: (Color.fromARGB(255, 238, 238, 238)),
                               fontSize: 40,
                               fontWeight: FontWeight.w900,
                             ),
@@ -154,7 +154,7 @@ class _BmiScreenState extends State<BmiScreen> {
                           const Text(
                             'cm',
                             style: TextStyle(
-                              color: (Color.fromARGB(1, 238, 238, 238)),
+                              color: (Color.fromARGB(255, 238, 238, 238)),
                               fontWeight: FontWeight.bold,
                             ),
                           ),
@@ -187,7 +187,7 @@ class _BmiScreenState extends State<BmiScreen> {
                       //age container
                       child: Container(
                         decoration: BoxDecoration(
-                          color: const Color.fromARGB(1, 57, 62, 70),
+                          color: const Color.fromARGB(255, 57, 62, 70),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Column(
@@ -196,15 +196,15 @@ class _BmiScreenState extends State<BmiScreen> {
                             const Text(
                               'Age',
                               style: TextStyle(
-                                color: (Color.fromARGB(1, 238, 238, 238)),
+                                color: (Color.fromARGB(255, 238, 238, 238)),
                                 fontSize: 25,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
                             Text(
-                              '$age',
+                              '${age.round()}',
                               style: const TextStyle(
-                                color: (Color.fromARGB(1, 238, 238, 238)),
+                                color: (Color.fromARGB(255, 238, 238, 238)),
                                 fontSize: 40,
                                 fontWeight: FontWeight.w900,
                               ),
@@ -252,7 +252,7 @@ class _BmiScreenState extends State<BmiScreen> {
                     Expanded(
                       child: Container(
                         decoration: BoxDecoration(
-                          color: const Color.fromARGB(1, 57, 62, 70),
+                          color: const Color.fromARGB(255, 57, 62, 70),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Column(
@@ -261,15 +261,15 @@ class _BmiScreenState extends State<BmiScreen> {
                             const Text(
                               'weight',
                               style: TextStyle(
-                                color: (Color.fromARGB(1, 238, 238, 238)),
+                                color: (Color.fromARGB(255, 238, 238, 238)),
                                 fontSize: 25,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
                             Text(
-                              '$weight',
+                              '${weight.round()}',
                               style: const TextStyle(
-                                color: (Color.fromARGB(1, 238, 238, 238)),
+                                color: (Color.fromARGB(255, 238, 238, 238)),
                                 fontSize: 40,
                                 fontWeight: FontWeight.w900,
                               ),
@@ -320,7 +320,7 @@ class _BmiScreenState extends State<BmiScreen> {
             Container(
               height: 50,
               width: double.infinity,
-              color: const Color.fromARGB(1, 0, 173, 181),
+              color: const Color.fromARGB(255, 0, 173, 181),
               child: MaterialButton(
                 onPressed: () {
                   var result = weight / pow(height / 100, 2);
@@ -328,7 +328,7 @@ class _BmiScreenState extends State<BmiScreen> {
                     context,
                     MaterialPageRoute(
                       builder: (context) => BmiResult(
-                        age: age,
+                        age: age.round(),
                         gender: isMale,
                         result: result.round(),
                       ),
@@ -336,9 +336,11 @@ class _BmiScreenState extends State<BmiScreen> {
                   );
                 },
                 child: const Text(
-                  'clac',
+                  'Clac',
                   style: TextStyle(
-                    color: (Color.fromARGB(1, 238, 238, 238)),
+                    color: (Color.fromARGB(255, 238, 238, 238)),
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
