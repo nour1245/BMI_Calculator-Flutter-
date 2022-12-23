@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Screenshots
 
-![homescreen](https://drive.google.com/file/d/1zE2OTloZLsV6j5dWSju7Yt2QIWwTTrk4/view?usp=share_link)
+![homescreen](https://live.staticflickr.com/65535/52580995227_379eef6f4e_c.jpg)
 
 
-![resultsScreen](https://drive.google.com/file/d/1b4EsxKyFLaiXbr-yiEXbKcNlFA1UqmOj/view?usp=share_link)
+![resultsScreen](https://live.staticflickr.com/65535/52581457476_51dffd78dc_c.jpg)
